@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+    margin: 20px;
+}
+
+.wiki-search-header {
+    border: 1px solid #d5cdcd;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+}
+
+.fa-solid {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.search-input {
+    width: 50%;
+    font-size: 18px;
+    border: 1px solid #d5cdcd;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.search-results {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.result-title-heading {
+    font-weight: bold;
+}
+
+.badge-item {
+    background-color: #3cb4fa;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    margin-right: 18px;
+}
+
+.result-title-img {
+    width: 150px;
+    height: 200px;
+}
+
+.result-title-img-absent {
+    margin-left: 10px;
+}
+
+.result-item1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.result-title-container {
+    margin-left: 30px;
+}
+
+.result-item {
+    padding: 20px;
+    margin: 10px;
+
+    margin-bottom: 10px;
+    background-color: #daf6f7;
+    border: 2px solid #72eef2;
+    display: flex;
+
+
+}
+
+.result-title {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.link-description {
+    color: #444444;
+    font-size: 15px;
+}
+
+.result-url {
+    color: #006621;
+    text-decoration: none;
+}
+
+.d-none {
+    display: none;
+}
+
+.spinner-border {
+    margin-top: 20px;
+}
+
+.wiki-search-header {
+    text-align: center;
+    border: none;
+}
+
+#gridViewBtn,
+#listViewBtn {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* Add styles for grid view */
+.grid-view .result-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+/* Adjust the width of the result-item1 within grid view */
+.grid-view .search-result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Add styles for list view */
+.list-view .result-item {
+    width: 80%;
+    padding-left: 20px;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    /* Light grey */
+    border-top: 8px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Basic styling for the search bar */
+.search-bar {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the input field */
+.search-input {
+    width: 200px;
+    /* Adjust width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    background-color: #baf7f5;
+}
+
+/* Style for the search icon */
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #555;
+    /* Adjust color as needed */
+    cursor: pointer;
+}
+
+.highlight {
+    color: #001f3f;
+    /* Dark blue color */
+    font-weight: bold;
+}
